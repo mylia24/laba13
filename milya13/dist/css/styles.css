@@ -1,0 +1,154 @@
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #1c1c1c;
+  color: #fff;
+  margin: 0;
+}
+
+header {
+  background-color: #000000;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  font-size: 35px;
+  padding-left: 40px;
+  font-weight: bold;
+  color: #ffb400;
+}
+header .menu-bar {
+  padding: 0;
+  margin: 0;
+}
+header .menu-bar .menu {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+  position: relative;
+}
+header .menu-bar .menu-item {
+  position: relative;
+}
+header .menu-bar .menu-item a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  display: inline-block;
+}
+header .menu-bar .menu-item a:hover {
+  background-color: #ca563f;
+}
+header .menu-bar .menu-item:hover .submenu {
+  display: flex !important;
+}
+header .menu-bar .menu .submenu {
+  position: absolute;
+  top: 100%;
+  background-color: #333;
+  display: none;
+}
+header .menu-bar .menu .submenu ul {
+  padding: 10px 0;
+}
+header .menu-bar .menu .submenu li {
+  list-style: none;
+}
+header .menu-bar .menu .submenu li a.title-menu {
+  color: #ca563f !important;
+  font-weight: 700;
+  font-size: 17px;
+}
+header .menu-bar .menu .submenu li a {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  padding: 0 15px;
+  line-height: 30px;
+}
+header .menu-bar .menu .submenu div a {
+  padding: 10px 20px;
+  display: block;
+}
+header .menu-bar .menu .submenu div a:hover {
+  background-color: #444;
+  color: #ffb400;
+}
+header .auth a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  display: inline-block;
+}
+header .auth a:hover {
+  background-color: #ca563f;
+}
+
+main {
+  height: 100%;
+}
+main section.top .navigation {
+  background-color: #333030;
+}
+main section.top .movie-list {
+  background-color: #131111;
+}
+main section.movies .navigation {
+  background-color: #333030;
+}
+main section.movies .movie-list {
+  background-color: #181818;
+}
+main .navigation {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  background-color: #333030;
+  padding: 0px 15px 0 20px;
+}
+main .navigation a {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  color: #818181;
+  text-decoration: none;
+  margin: 18px;
+}
+main .navigation a:hover {
+  color: #ca563f;
+}
+
+.movie-list {
+  display: flex;
+  padding: 15px;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+.movie-list .movie-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  padding-bottom: 5px;
+  border-radius: 8px;
+  background-color: #333;
+}
+.movie-list .movie-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+.movie-list .movie-item p {
+  margin: 4px;
+  padding: 4px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
